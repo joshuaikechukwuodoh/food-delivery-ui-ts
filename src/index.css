@@ -1,9 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-body {
-  font-family: "Poppins", sans-serif;
+@theme {
+  /* colors for my ui  */
+  --color-tomatoBlaze: #ff5733;
+  --color-saffronGlow: #ffb833;
+  --color-oliveSprig: #28a745;
+  --color-chiliSpice: #d32f2f;
+  --color-creamyWhite: #ffffff;
+  --color-charcoalSlate: #333333;
+  --color-softGray: #666666;
+  --color-lightMist: #f8f9fa;
+  --color-lemonZest: #ffca28;
+  --color-skyBlue: #0288d1;
+
+  --animate-fade-in-scale: fade-in-scale 0.5s ease-in-out;
+
+  /* font family  */
+  --default-font-family: Poppins, sans-serif;
+
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 }
