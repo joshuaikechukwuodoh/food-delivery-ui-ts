@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+@plugin "daisyui";
+
 @theme {
   /* colors for my ui  */
   --color-tomatoBlaze: #ff5733;
@@ -14,6 +16,7 @@
   --color-lightMist: #f8f9fa;
   --color-lemonZest: #ffca28;
   --color-skyBlue: #0288d1;
+  --color-darkGreen: #004225;
 
   --animate-fade-in-scale: fade-in-scale 0.5s ease-in-out;
 
