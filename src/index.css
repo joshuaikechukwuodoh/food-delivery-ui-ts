@@ -4,6 +4,11 @@
 
 @plugin "daisyui";
 
+/* button default styles */
+.btn-base {
+  @apply btn btn-primary text-white px-4 py-2 rounded;
+}
+
 @theme {
   /* colors for my ui  */
   --color-tomatoBlaze: #ff5733;
