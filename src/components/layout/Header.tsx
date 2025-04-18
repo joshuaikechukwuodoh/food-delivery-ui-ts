@@ -6,7 +6,7 @@ export default function Header() {
   };
   return (
     <>
-      <div className="flex  flex-row justify-between align-middle rounded-md bg-lightMist px-7 py-5 w-full">
+      <div className="flex text-charcoalSlate  flex-row justify-between align-middle rounded-md bg-lightMist px-7 py-5 w-full">
         <h1 className="font-black ">FF</h1>
         <ul className="flex align-middle gap-3 justify-between">
           <li>Home</li>
@@ -20,6 +20,7 @@ export default function Header() {
         >
           Log in
         </Button>
+        <Button className="btn-base">Register</Button>
       </div>
     </>
   );
