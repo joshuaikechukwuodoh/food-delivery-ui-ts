@@ -1,14 +1,14 @@
 import Home from "./pages/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 export default function App() {
   return (
     <>
-      <div className="flex flex-col bg-skyBlue rounded-b-md ">
-        <Home />
-        <Home />
-        <Home />
-        <Home />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </>
   );
 }
