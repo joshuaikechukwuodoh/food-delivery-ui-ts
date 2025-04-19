@@ -4,7 +4,7 @@ import Input from "../components/common/Input";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import Background from "../assets/background.jpg";
-import Card from "../components/common/Card";
+// import Card from "../components/common/Card";
 
 export default function Home() {
   return (
@@ -12,13 +12,9 @@ export default function Home() {
       <div className="bg-creamyWhite">
         <Header />
         <div
-          className="w-full py-10 px-5 sm:px-10 md:px-20 bg-cover bg-center"
+          className="w-full pt-40 py-10 px-5 sm:px-10 md:px-20 bg-cover bg-center"
           style={{ backgroundImage: `url(${Background})` }}
         >
-          <h1 className="animate-fade-in-scale text-creamyWhite text-lg sm:text-xl md:text-2xl">
-            This is the home page of the website
-          </h1>
-
           <div className="flex flex-col gap-4 mt-6">
             <h1 className="text-primaryBgColor font-medium text-2xl sm:text-3xl md:text-4xl">
               Order delivery near you
