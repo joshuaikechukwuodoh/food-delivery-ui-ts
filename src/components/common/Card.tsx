@@ -1,24 +1,29 @@
-import { Restaurants } from "../../types/Restaurant";
+import { CardProps } from "../../types/Card";
 
-interface CardProps {
-  restaurant: Restaurants;
-}
-
-export default function Card({ restaurant }: CardProps) {
+export default function Card({
+  Button,
+  Image,
+  Text,
+  Title,
+  ImageText,
+  ...rest
+}: CardProps) {
   return (
-    <div>
-      <img
-        src={restaurant.image}
-        alt={restaurant.name}
-        className="w-full h-[120px] rounded-t-lg object-cover"
-      />
-      <div>
-        <h3 className="text-charcoalSlate text-lg font-semibold">
-          {restaurant.name}
-        </h3>
-        <p className="text-softGray text-sm">{restaurant.rating} ★</p>
-        <p className="text-softGray text-sm">{restaurant.eta}</p>
+    <>
+      <div {...rest}>
+        {Image && (
+          <img
+            src={Image}
+            alt={ImageText || "Card image"}
+            className="w-full h-48 object-cover"
+          />
+        )}
+        <div className="p-4 flex-col flex gap-2">
+          <h3>{Title}</h3>
+          <p>{Text}</p>
+        </div>
+        <button {...Button} />
       </div>
-    </div>
+    </>
   );
 }
