@@ -22,7 +22,7 @@ export default function Header() {
       <NavLink
         to={"/"}
         className={`${className} ${
-          isScrolled ? "text-primaryBgColor font-semibold" : "text-creamyWhite"
+          isScrolled ? "text-primaryBgColor  font-semibold" : "text-creamyWhite"
         }`}
         onClick={() => setIsOpen(false)}
       >
@@ -61,7 +61,7 @@ export default function Header() {
         >
           <NavLink
             to={"/"}
-            className={`font-black font-logoFont text-2xl transition-all duration-300 ${
+            className={`font-black active:text-ctaColor hover:text-ctaColor font-logoFont text-2xl transition-all duration-300 ${
               isScrolled ? "text-primaryBgColor" : "text-white"
             }`}
           >
