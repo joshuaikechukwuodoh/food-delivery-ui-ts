@@ -12,25 +12,26 @@ export default function Home() {
       <div className="bg-creamyWhite">
         <Header />
         <div
-          className="w-full pt-40 py-10 px-5 sm:px-10 md:px-20 bg-cover bg-center"
+          className="w-full pt-40 py-10 h-1/2 px-5 sm:px-10 md:px-20 bg-cover bg-center"
           style={{ backgroundImage: `url(${Background})` }}
         >
           <div className="flex flex-col gap-4 mt-6">
-            <h1 className="text-primaryBgColor font-medium text-2xl sm:text-3xl md:text-4xl">
+            <h1 className="cursor-pointer  active:text-primaryBgColor hover:text-primaryBgColor transition-all duration-300 text-ctaColor font-bold text-2xl sm:text-3xl md:text-4xl">
               Order delivery near you
             </h1>
 
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex max-w-3xl items-center justify-center flex-row gap-2 flex-wrap sm:flex-nowrap">
               <div className="flex flex-1 gap-4 items-center px-4 py-3 bg-creamyWhite text-charcoalSlate rounded-md">
                 <Location size={20} />
                 <Input
                   name="search"
                   type="text"
                   className="border-none outline-none w-full"
+                  placeholder="Enter Your Location"
                 />
               </div>
-              <Button className="px-5 py-3 bg-ctaColor text-creamyWhite font-semibold rounded-md w-full sm:w-auto">
-                Find Restaurants
+              <Button className="px-5 py-3 active:bg-primaryBgColor hover:bg-primaryBgColor transition-all duration-300   bg-ctaColor text-creamyWhite font-semibold rounded-md sm:w-auto">
+                Set Location
               </Button>
             </div>
           </div>
