@@ -4,8 +4,7 @@ import Input from "../components/common/Input";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import Background from "../assets/background.jpg";
-// import Card from "../components/common/Card";
-
+import Card from "../components/common/Card";
 export default function Home() {
   return (
     <>
@@ -36,7 +35,24 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <Card restaurant={} /> */}
+        <Card
+          className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite"
+          Title="Effortless Ordering"
+          Text="Order seamlessly"
+          ImageText="Food ordering Image"
+        />
+        <Card
+          className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite"
+          Title="Swift Delivery"
+          Text="Count on us to deliver your foods"
+          ImageText="Food ordering Image"
+        />
+        <Card
+          className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite"
+          Title="Get it while its hot"
+          Text="YOur meal gets to you in time"
+          ImageText="Food ordering Image"
+        />
         <p className="text-black bg-white px-5 sm:px-10 md:px-20 py-8 text-sm leading-relaxed">
           {/* Keeping the long text content as-is; you can eventually extract this into a reusable component or truncate for mobile if needed */}
           // "De finibus bonorum et malorum" Cicero Absatz 1.10.32 - 1.10.33 Sed
