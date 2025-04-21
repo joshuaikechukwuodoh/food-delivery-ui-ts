@@ -35,7 +35,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around items-center">
+        <div className="flex justify-around text-center px-25 py-15 items-center">
           <Card
             // className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite"
             Title="Effortless Ordering"
