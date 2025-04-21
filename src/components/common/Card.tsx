@@ -1,11 +1,12 @@
 import { CardProps } from "../../types/Card";
 
 export default function Card({
-  Button,
   Image,
   Text,
   Title,
   ImageText,
+  Icon,
+  Size,
   ...rest
 }: CardProps) {
   return (
@@ -18,11 +19,12 @@ export default function Card({
             className="w-full h-48 object-cover"
           />
         )}
+        {Icon && <Icon size={Size} />}
         <div className="p-4 flex-col flex gap-2">
-          <h3>{Title}</h3>
+          <h3 className="font-bold text-2xl">{Title}</h3>
           <p>{Text}</p>
         </div>
-        <button {...Button} />
+        {/* {Button && <button {...Button}>{Button.children}</button>} */}
       </div>
     </>
   );

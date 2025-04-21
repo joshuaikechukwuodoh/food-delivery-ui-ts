@@ -9,7 +9,15 @@ import { MdChat } from "react-icons/md";
 import { IoMoon } from "react-icons/io5";
 import { IoSunny } from "react-icons/io5";
 import { FaLock } from "react-icons/fa";
+import { MdLocalMall } from "react-icons/md";
+import { TbTruckDelivery } from "react-icons/tb";
+import { BsCupHotFill } from "react-icons/bs";
+import { GrRestaurant } from "react-icons/gr";
 
+export const Restaurant = GrRestaurant;
+export const Mall = MdLocalMall;
+export const Delivery = TbTruckDelivery;
+export const HotCup = BsCupHotFill;
 export const Lock = FaLock;
 export const Sun = IoSunny;
 export const Moon = IoMoon;

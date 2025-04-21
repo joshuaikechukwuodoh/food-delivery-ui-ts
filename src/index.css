@@ -16,22 +16,22 @@
   /* colors for my ui  */
   --color-primaryBgColor: #d22526;
   --color-ctaColor: #ffb833;
-  --color-oliveSprig: #28a745;
-  /* --color-chiliSpice: #d32f2f; */
+  /* text colors  */
   --color-creamyWhite: #ffffff;
   --color-charcoalSlate: #333333;
   --color-softGray: #666666;
+  /* background color on light mode  */
   --color-lightMist: #f8f9fa;
-  --color-lemonZest: #ffca28;
-  --color-skyBlue: #0288d1;
-  --color-darkGreen: #004225;
 
+  /* animations  */
   --animate-fade-in-scale: fade-in-scale 0.5s ease-in-out;
+  --animate-scroll: scroll 20s linear infinite;
 
   /* font family  */
   --default-font-family: Poppins, sans-serif;
   --font-logoFont: "Wendy One", sans-serif;
 
+  /* fade in animation  */
   @keyframes fade-in-scale {
     0% {
       opacity: 0;
@@ -40,6 +40,16 @@
     100% {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  /* scroll animation horizontally  */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
     }
   }
 }

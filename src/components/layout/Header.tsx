@@ -105,7 +105,7 @@ export default function Header() {
         <div
           className={`flex  items-center justify-between transition-all duration-300 ${
             isScrolled
-              ? "bg-creamyWhite dark:bg-charcoalSlate max-w-5xl mt-3 mx-auto rounded-[10px] shadow-md px-6 py-3"
+              ? "bg-lightMist/80 dark:bg-charcoalSlate/80 max-w-5xl mt-3 mx-auto rounded-[10px] shadow-md px-6 py-3"
               : "w-full px-8 py-5 bg-transparent"
           }`}
         >
