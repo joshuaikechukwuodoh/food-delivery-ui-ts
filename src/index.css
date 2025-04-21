@@ -10,6 +10,8 @@
   @apply btn btn-primary text-white px-4 py-2 rounded;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* colors for my ui  */
   --color-primaryBgColor: #d22526;

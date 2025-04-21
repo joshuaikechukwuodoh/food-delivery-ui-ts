@@ -6,7 +6,13 @@ import { TiShoppingCart } from "react-icons/ti";
 import { IoIosHeart } from "react-icons/io";
 import { IoIosHome } from "react-icons/io";
 import { MdChat } from "react-icons/md";
+import { IoMoon } from "react-icons/io5";
+import { IoSunny } from "react-icons/io5";
+import { FaLock } from "react-icons/fa";
 
+export const Lock = FaLock;
+export const Sun = IoSunny;
+export const Moon = IoMoon;
 export const Chat = MdChat;
 export const Home = IoIosHome;
 export const Heart = IoIosHeart;

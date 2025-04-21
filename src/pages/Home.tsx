@@ -8,7 +8,7 @@ import Card from "../components/common/Card";
 export default function Home() {
   return (
     <>
-      <div className="bg-creamyWhite">
+      <div className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite">
         <Header />
         <div
           className="w-full pt-40 py-10 h-1/2 px-5 sm:px-10 md:px-20 bg-cover bg-center"
@@ -21,7 +21,7 @@ export default function Home() {
 
             <div className="flex max-w-3xl items-center justify-center flex-row gap-2 flex-wrap sm:flex-nowrap">
               <div className="flex flex-1 gap-4 items-center px-4 py-3 bg-creamyWhite text-charcoalSlate rounded-md">
-                <Location size={20} />
+                <Location className="text-ctaColor " size={20} />
                 <Input
                   name="search"
                   type="text"
@@ -35,25 +35,27 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Card
-          className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite"
-          Title="Effortless Ordering"
-          Text="Order seamlessly"
-          ImageText="Food ordering Image"
-        />
-        <Card
-          className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite"
-          Title="Swift Delivery"
-          Text="Count on us to deliver your foods"
-          ImageText="Food ordering Image"
-        />
-        <Card
-          className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite"
-          Title="Get it while its hot"
-          Text="YOur meal gets to you in time"
-          ImageText="Food ordering Image"
-        />
-        <p className="text-black bg-white px-5 sm:px-10 md:px-20 py-8 text-sm leading-relaxed">
+        <div className="flex justify-around items-center">
+          <Card
+            // className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite"
+            Title="Effortless Ordering"
+            Text="Order seamlessly"
+            ImageText="Food ordering Image"
+          />
+          <Card
+            // className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite"
+            Title="Swift Delivery"
+            Text="Count on us to deliver your foods"
+            ImageText="Food ordering Image"
+          />
+          <Card
+            // className="bg-creamyWhite text-charcoalSlate dark:bg-charcoalSlate dark:text-creamyWhite"
+            Title="Get it while its hot"
+            Text="YOur meal gets to you in time"
+            ImageText="Food ordering Image"
+          />
+        </div>
+        <p className="text-black bg-transparent dark:text-creamyWhite px-5 sm:px-10 md:px-20 py-8 text-sm leading-relaxed">
           {/* Keeping the long text content as-is; you can eventually extract this into a reusable component or truncate for mobile if needed */}
           // "De finibus bonorum et malorum" Cicero Absatz 1.10.32 - 1.10.33 Sed
           ut // perspiciatis unde omnis iste natus error sit voluptatem
