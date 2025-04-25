@@ -21,8 +21,8 @@ export default function Card({
         )}
         {Icon && <Icon size={Size} />}
         <div className="p-4 flex-col flex gap-2">
-          <h3 className="font-bold text-2xl">{Title}</h3>
-          <p>{Text}</p>
+          <h3 className="font-bold text-[15px] md:text-2xl">{Title}</h3>
+          <p className="text-[10px] md:text-[15px]">{Text}</p>
         </div>
         {/* {Button && <button {...Button}>{Button.children}</button>} */}
       </div>

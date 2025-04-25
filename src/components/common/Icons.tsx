@@ -13,7 +13,9 @@ import { MdLocalMall } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
 import { BsCupHotFill } from "react-icons/bs";
 import { GrRestaurant } from "react-icons/gr";
+import { LuSend } from "react-icons/lu";
 
+export const Send = LuSend;
 export const Restaurant = GrRestaurant;
 export const Mall = MdLocalMall;
 export const Delivery = TbTruckDelivery;
