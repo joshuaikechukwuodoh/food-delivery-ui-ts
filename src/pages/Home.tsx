@@ -9,7 +9,7 @@ import { Mall, HotCup, Delivery } from "../components/common/Icons";
 
 export default function Home() {
   const cardClass =
-    "shadow-2xl flex items-center flex-col active:shadow-md hover:shadow-md transition rounded-md p-3 dark:text-creamyWhite dark:bg-yellow-500/11 text-charcoalSlate";
+    "cursor-pointer shadow-2xl flex items-center flex-col active:shadow-md hover:shadow-md transition rounded-md p-3 dark:text-creamyWhite dark:bg-yellow-500/11 text-charcoalSlate";
   return (
     <>
       <div className="bg-lightMist text-charcoalSlate dark:bg-charcoalSlate/50 dark:text-creamyWhite">
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex  flex-col text-center gap-2 px-20 py-10">
-          <h2 className="sm:text-2xl md:animate-fade-in-scale text-[20px] font-extrabold  ">
+          <h2 className="sm:text-2xl md:animate-fade-in-scale text-[15px] font-extrabold  ">
             Get Your Delivery In Three Easy Steps
           </h2>
           <div className="flex flex-col md:flex-row justify-around ">
@@ -70,13 +70,13 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="px-20 py-10 flex gap-5">
-          <div className="flex justify-between items-center px-3 bg-yellow-500/11 rounded-md">
+        <div className="md:px-20 md:py-10 flex flex-col md:flex-row md:gap-5">
+          <div className="flex justify-between items-center cursor-pointer px-3 bg-yellow-500/11 rounded-md">
             <Card
               Icon={Restaurant}
-              className="flex items-center"
+              className="flex items-center "
               Size={100}
-              Title="Open Your Own Restaurant"
+              Title="Open Your Restaurant"
               Text="Register as a seller and open shop to start your business"
             />
             <Button className="cursor-pointer bg-ctaColor px-5 py-2 transition hover:bg-primaryBgColor active:bg-primaryBgColor rounded-full text-creamyWhite font-bold">
@@ -84,10 +84,10 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="flex justify-between items-center px-3 bg-yellow-500/11 rounded-md">
+          <div className="flex justify-between items-center cursor-pointer px-3 bg-yellow-500/11 rounded-md">
             <Card
               Icon={Delivery}
-              className="flex items-center"
+              className="flex items-center "
               Size={100}
               Title="Become a Delivery Man"
               Text="Register as a delivery man and earn money"

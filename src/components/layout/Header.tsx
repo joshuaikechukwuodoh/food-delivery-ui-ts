@@ -123,7 +123,9 @@ export default function Header() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-6 text-sm">
             <Button
-              className={`${isScrolled ? "text-ctaColor" : "text-creamyWhite"}`}
+              className={`cursor-pointer ${
+                isScrolled ? "text-ctaColor" : "text-creamyWhite"
+              }`}
               onClick={() => setToggleDarkMode(!toggleDarkMode)}
             >
               {toggleDarkMode ? <Sun size={20} /> : <Moon size={20} />}
