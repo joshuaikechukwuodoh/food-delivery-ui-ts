@@ -43,7 +43,7 @@ export default function Home() {
           <h2 className="sm:text-2xl md:animate-fade-in-scale text-[15px] font-extrabold  ">
             Get Your Delivery In Three Easy Steps
           </h2>
-          <div className="flex flex-col md:flex-row justify-around ">
+          <div className="flex flex-col gap-3 md:flex-row justify-around ">
             <Card
               Icon={Mall}
               Size={25}

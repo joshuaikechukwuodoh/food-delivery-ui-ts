@@ -56,7 +56,7 @@ export default function Header() {
     () => (
       <>
         <NavLink
-          to={"/"}
+          to={"/home"}
           className={({ isActive }) =>
             `${className} ${
               isScrolled
@@ -122,12 +122,7 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-6 text-sm">
-            <Button
-              className={`cursor-pointer ${
-                isScrolled ? "text-ctaColor" : "text-creamyWhite"
-              }`}
-              onClick={() => setToggleDarkMode(!toggleDarkMode)}
-            >
+            <Button onClick={() => setToggleDarkMode(!toggleDarkMode)}>
               {toggleDarkMode ? <Sun size={20} /> : <Moon size={20} />}
             </Button>
             {navLinks}
