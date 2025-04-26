@@ -123,7 +123,11 @@ export default function Header() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-6 text-sm">
             <Button onClick={() => setToggleDarkMode(!toggleDarkMode)}>
-              {toggleDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+              {toggleDarkMode ? (
+                <Sun size={20} />
+              ) : (
+                <Moon className="text-creamyWhite" size={20} />
+              )}
             </Button>
             {navLinks}
             <Button
