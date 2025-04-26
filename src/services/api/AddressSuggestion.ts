@@ -4,7 +4,7 @@ import { nominatimApi } from "./AddressSuggestionAxios";
 export const getAddressSuggestions = async (
   query: string
 ): Promise<AddressSuggestion[]> => {
-  if (!query || query.length < 3) {
+  if (!query || query.length < 1) {
     return []; // Return empty array for short queries
   }
 

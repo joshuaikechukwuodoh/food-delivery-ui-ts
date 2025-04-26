@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="py-3 flex flex-col">
       {/* Email support/connect div  */}
       <div className="bg-yellow-500/11 flex justify-center items-center">
-        <div className="bg-ctaColor/50 flex flex-col md:flex-row gap-3 text-center justify-between items-center w-5xl p-10">
+        <div className="bg-ctaColor/50 flex flex-col md:flex-row gap-3 text-center justify-between items-center w-5xl md:p-10 py-2">
           <div className="flex flex-col gap-5">
             <h4 className="text-2xl text-charcoalSlate dark:text-creamyWhite font-bold ">
               Lets connect
@@ -53,7 +53,7 @@ const Footer = () => {
           Help & Support
         </NavLink>
       </div>
-      <h1 className="font-logoFont dark:text-creamyWhite hover:text-ctaColor active:text-ctaColor transition cursor-pointer text-7xl md:text-9xl text-center my-1 text-primaryBgColor">
+      <h1 className="font-logoFont dark:text-creamyWhite hover:text-ctaColor active:text-ctaColor transition cursor-pointer text-5xl md:text-9xl text-center my-1 text-primaryBgColor">
         SERVEDISH
       </h1>
       <p className="text-center">copyright© {currentDate.getFullYear()} </p>
