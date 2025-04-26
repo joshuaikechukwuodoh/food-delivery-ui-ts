@@ -1,3 +1,4 @@
+import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 
 export default function HomePage() {
@@ -48,6 +49,7 @@ export default function HomePage() {
       <h1>The /home Route</h1>
       <h1>The /home Route</h1>
       <h1>The /home Route</h1>
+      <Footer />
     </div>
   );
 }
