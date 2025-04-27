@@ -23,7 +23,7 @@ export default function Hero() {
 
   // Debounce function to limit API calls
   const debounce = (func: Function, delay: number) => {
-    let timeoutId: number;
+    let timeoutId: NodeJS.Timeout;
     return (...args: any[]) => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => func(...args), delay);
