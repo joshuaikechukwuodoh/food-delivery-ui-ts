@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { AddressSuggestion } from "../../types/AddressSuggestion";
 import { Button } from "../common/Button";
 import { getAddressSuggestions } from "../../services/api/AddressSuggestion";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
   const [addressInput, setAddressInput] = useState("");
@@ -17,6 +18,8 @@ export default function Hero() {
   } | null>(null);
   const suggestionsRef = useRef<HTMLUListElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const navigate = useNavigate();
 
   // Debounce function to limit API calls
   const debounce = (func: Function, delay: number) => {
@@ -73,6 +76,7 @@ export default function Hero() {
       alert(
         `Location set to: ${addressInput}\nLat: ${selectedLocation.lat}, Lng: ${selectedLocation.lng}`
       );
+      navigate("/home");
     } else {
       alert("Please select a location from the suggestions");
     }
