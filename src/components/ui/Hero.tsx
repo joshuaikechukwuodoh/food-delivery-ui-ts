@@ -73,6 +73,7 @@ export default function Hero() {
   // Handle set location button click
   const handleSetLocation = () => {
     if (selectedLocation) {
+      localStorage.setItem("location", addressInput);
       navigate("/home");
       toast.success(`New Location Set ${addressInput}`);
     } else {
