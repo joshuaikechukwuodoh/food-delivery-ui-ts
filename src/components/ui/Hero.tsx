@@ -6,6 +6,7 @@ import { AddressSuggestion } from "../../types/AddressSuggestion";
 import { Button } from "../common/Button";
 import { getAddressSuggestions } from "../../services/api/AddressSuggestion";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 export default function Hero() {
   const [addressInput, setAddressInput] = useState("");
@@ -72,11 +73,8 @@ export default function Hero() {
   // Handle set location button click
   const handleSetLocation = () => {
     if (selectedLocation) {
-      // Here you would typically save the location to state/context/backend
-      alert(
-        `Location set to: ${addressInput}\nLat: ${selectedLocation.lat}, Lng: ${selectedLocation.lng}`
-      );
       navigate("/home");
+      toast.success(`New Location Set ${addressInput}`);
     } else {
       alert("Please select a location from the suggestions");
     }
