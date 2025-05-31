@@ -4,8 +4,4 @@ Still working on it 😔
 
 deleted some nonsense I wrote 
 
-Don't even know what to do now 😞 😞 
-
-Now i understand better 
-
-just some random commits
+Don't even know what to do now 😞 😞
