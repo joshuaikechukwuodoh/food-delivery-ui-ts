@@ -157,22 +157,3 @@ export default function Hero() {
   );
 }
 
-
-
-
-
-
-
-export default function App() {
-  return (
-    <>
-      <Router>
-        <Toaster />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<HomePage />} />
-        </Routes>
-      </Router>
-    </>
-  );
-}
