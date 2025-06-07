@@ -31,6 +31,29 @@ export default function Hero() {
     };
   };
 
+  // const fetchSuggestionsDebounced = useCallback(
+  //   debounce(async (query: string) => {
+  //     if (query.length < 3) {
+  //       setSuggestions([]);
+  //       return;
+  //     }
+
+  //     try {
+  //       setIsLoading(true);
+  //       const response = await getAddressSuggestions(query);
+  //       setSuggestions(response);
+  //     } catch (error) {
+  //       console.error("Error fetching address suggestions:", error);
+  //       setSuggestions([]);
+  //     } finally {
+  //       setIsLoading(false);
+  //     }
+  //   }, 300),
+  //   []
+  // );
+
+  // Handle input change
+
   const fetchSuggestionsDebounced = useCallback(
     debounce(async (query: string) => {
       if (query.length < 3) {
@@ -41,7 +64,18 @@ export default function Hero() {
       try {
         setIsLoading(true);
         const response = await getAddressSuggestions(query);
-        setSuggestions(response);
+
+        // Filter results to only include locations in Nigeria
+        const filtered = response.filter((s: AddressSuggestion) =>
+          s.display_name.toLowerCase().includes("nigeria")
+        );
+
+        //To warn users about selected region now it's set to Nigeria
+        if (filtered.length === 0) {
+          toast.error("Only locations within Nigeria are supported for now.");
+        }
+
+        setSuggestions(filtered);
       } catch (error) {
         console.error("Error fetching address suggestions:", error);
         setSuggestions([]);
@@ -52,7 +86,6 @@ export default function Hero() {
     []
   );
 
-  // Handle input change
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setAddressInput(value);
@@ -120,7 +153,7 @@ export default function Hero() {
               value={addressInput}
               onChange={handleInputChange}
               className="border-none outline-none w-full"
-              placeholder="Enter Your Location"
+              placeholder="Enter Your Location (Only in Nigeria)"
               autoComplete="off"
             />
             {isLoading && (
