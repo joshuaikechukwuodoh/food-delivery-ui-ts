@@ -14,9 +14,8 @@ export default function HomePage() {
   }, []);
   return (
     <div className="bg-lightMist py-96 text-charcoalSlate dark:bg-charcoalSlate/50 dark:text-creamyWhite">
-      <div className="bg-black dark:bg-grey">
-        <Header />
-      </div>
+      <Header />
+
       <div>
         <h1>What's on your mind</h1>
         <CuisineCarousel />
