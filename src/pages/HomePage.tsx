@@ -23,6 +23,10 @@ export default function HomePage() {
 
       <h1>{userLocation}</h1>
 
+      <p>
+        this is just some random text because am sure defintely dat i will start
+        this very poject from scratch
+      </p>
       <Footer />
     </div>
   );
